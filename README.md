@@ -1,9 +1,11 @@
 EventBus
 ========
 
-Type-safe and thread-safe, one-to-many event bus in Java, optimized for speed and low-garbage on Android.
+Type-safe and thread-safe, one-to-many event bus in Java, optimized for speed and low-garbage on Android. 
 
 Event classes can be posted to any object that is registered to receive that particular type. Any registered received can specify a preferred thread to execute the response on, and any number of receivers and objects may register for a given event type.
+
+Available under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
 
 ## Basic usage
 ```java
