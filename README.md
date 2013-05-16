@@ -83,10 +83,10 @@ public class Demo extends Activity {
 
 			@Override
 			public void post (final Object event, final EventListener<Object> listener) {
-        // This is invoked on the event-source's thread
-        runOnUiThread(new Runnable() { public void run() {
-          // Invoke the listener ourselves, on the Activity's UI thread
-          listener.onEvent(event);
+				// This is invoked on the event-source's thread
+				runOnUiThread(new Runnable() { public void run() {
+					// Invoke the listener ourselves, on the Activity's UI thread
+					listener.onEvent(event);
 				}});
 			}
 			
