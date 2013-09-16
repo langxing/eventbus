@@ -19,7 +19,7 @@ public class EventBus {
 	private final Map<Class<? extends Object>, Subscribers> eventSubscribers;
 	
 	public EventBus () {
-		eventSubscribers = Collections.synchronizedMap(new HashMap<Class<? extends Object>, Subscribers>());
+		eventSubscribers = Collections.synchronizedMap(new HashMap<Class<? extends Object>, Subscribers>(0));
 	}
 	
 	private Subscribers getSubscribers (Class<? extends Object> eventClass, boolean create) {
